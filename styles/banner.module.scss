@@ -1,0 +1,184 @@
+.banner {
+    background: url("../public/shapes/white_triangle.png") bottom 20% right 8%, url("../public/shapes/white_triangle.png") top 10% right 25%, url("../public/shapes/white_triangle.png") top 25% left 6%, linear-gradient(144.88deg, rgba(255, 255, 255, 0.3) -3.98%, rgba(75, 173, 239, 0.2) 21.27%, rgba(0, 183, 155, 0.6) 71.28%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+    .container {
+        .text {
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .title {
+                    text-align: center;
+                    font-size: 3rem;
+                }
+            }
+
+
+            .description {
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                text-align: center;
+
+                >p {
+                    padding: 1rem 0;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .inputSearch {
+                display: flex;
+                width: 100%;
+
+                >input {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    padding-left: 15px;
+                }
+
+                .btnSearch {
+                    background-color: #08c3a8;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                }
+            }
+
+            .buttons {
+                width: 100%;
+
+                .buttonMentors {
+                    .sub {
+                        width: 100%;
+                        color: #172E59;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 0.75rem;
+                    }
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    background-color: rgb(255 255 255 / 0.5);
+                    gap:10px;
+                    padding: 2rem;
+                    margin-top: 2rem;
+
+                    .btn {
+                        padding: 10px 15px;
+                        background-color: #172e59;
+                        color: #fff;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+        }
+
+        .shapeBlueLeft {
+            width: 100px;
+            height: 90%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .shapeBlueRight {
+            width: 100px;
+            height: 90%;
+            position: absolute;
+            top: 40px;
+            right: 0px;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .banner {
+        height: 120vh;
+        background: none;
+        background-image: linear-gradient(#ffffff 0%, #8DD2D2 40%);
+
+        .container {
+            .text {
+                width: 100%;
+
+                .inputSearch {
+                    >input {
+                        background-color: #fff;
+                    }
+                }
+
+                .buttons {
+                    .buttonMentors {
+                        padding: 1rem;
+
+                        .btn {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+
+            .shapeBlueLeft {
+                position: static;
+                display: none;
+            }
+
+            .shapeBlueRight {
+                position: static;
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        // height: 100vh;
+
+        .container {
+            .text {
+                .title {
+                    .newline {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+
+                .description {
+                    width: 100%;
+                }
+            }
+
+            .shapeBlueLeft {
+                position: static;
+                display: none;
+            }
+
+            .shapeBlueRight {
+                position: static;
+                display: none;
+            }
+        }
+    }
+}

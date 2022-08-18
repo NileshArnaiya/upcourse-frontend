@@ -1,0 +1,82 @@
+.storymentor {
+    height: 150vh;
+    background-color: #f3f4f6;
+
+    .title {
+        text-align: center;
+        font-size: 1.875rem;
+        padding: 5rem 0 0 0;
+        color: #172E59;
+        >span {
+            display: block;
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 3rem 0;
+        color: #172E59;
+        >p {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+
+        .column {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            min-height: 100%;
+            padding: 2rem;
+
+            .header {
+                height: 20%;
+            }
+
+            .body {
+                height: 70%;
+                color: #172E59;
+                font-size: 1rem;
+                font-weight: 400;
+                font-style: italic;
+                padding: 0.5rem 0;
+            }
+
+            .footer {
+                height: 10%;
+                padding: 0.5rem 0;
+                color: #172E59;
+                font-weight: 700;
+                font-style: italic;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .storymentor {
+        height: 300vh;
+        .description{
+            > p{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .storymentor {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

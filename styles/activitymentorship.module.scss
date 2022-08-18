@@ -1,0 +1,134 @@
+.activitymentorship {
+    background: url("../public/shapes/orange_triangle.png") top 5% left 15%, url("../public/shapes/green_triangle.png") bottom 30% right 5%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+    .title {
+        text-align: center;
+        font-size: 1.875rem;
+        color: #172E59;
+        font-weight: 700;
+
+        >span {
+            display: block;
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 2rem 0;
+        font-size: 1.25rem;
+        color: #172E59;
+
+        >p {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        padding: 3rem 0;
+        align-items: center;
+
+        .column {
+            .activity {
+                display: flex;
+                align-items: center;
+
+                .smalltext {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #172E59;
+                    text-transform: uppercase;
+                }
+            }
+
+            .image {
+                position: relative;
+                width: 100%;
+                height: 24rem;
+            }
+
+            .text {
+                width: 70%;
+                color: #172E59;
+
+                .subtitle {
+                    font-size: 1.875rem;
+                    font-weight: 700;
+                }
+
+                .subdesc {
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                }
+            }
+
+            .comment {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+
+                .picauthor {
+                    padding-right: 1rem;
+                }
+
+                .word {
+                    width: 60%;
+                    color: #172E59;
+
+                    .morecomment {
+                        font-size: 0.875rem;
+                        font-style: italic;
+                    }
+                    .nameauthor{
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .activitymentorship {
+        background: none;
+        background-color: #fff;
+
+        .description {
+            >p {
+                width: 100%;
+            }
+        }
+
+        .container {
+            .column {
+                width: 100%;
+
+                .text {
+                    width: 100%;
+                }
+
+                .comment {
+                    .word {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .activitymentorship {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

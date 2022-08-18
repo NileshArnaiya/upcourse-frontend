@@ -1,0 +1,135 @@
+.login {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1f1f1;
+
+        .column {
+            .image {
+                position: relative;
+                width: 50%;
+                height: 16rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .form {
+                padding: 0 2rem;
+
+                .inputEmail {
+                    width: 100%;
+                    height: 44px;
+                    padding-left: 0.5rem;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .invalidEmail {
+                    border: 2px solid red;
+                }
+
+                .wrap {
+                    position: relative;
+
+                    .inputPassword {
+                        width: 100%;
+                        height: 44px;
+                        padding-left: 0.5rem;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .invalidPass {
+                        border: 2px solid red;
+                    }
+
+                    .imageEye {
+                        position: absolute;
+                        top: 18px;
+                        right: 15px;
+                        width: 15px;
+                        height: 10px;
+                    }
+                }
+
+                .labelEmail,
+                .labelPass {
+                    margin: 0.5rem 0;
+                    display: block;
+                }
+
+                .forgotPass {
+                    margin: 0.5rem 0 1rem 0;
+                    display: block;
+                }
+
+                .btnLogin {
+                    display: block;
+                    background-color: #0E927A;
+                    border: none;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1rem;
+                    cursor: pointer;
+                }
+
+                .showError {
+                    background-color: #FEDCE0;
+                    width: fit-content;
+
+                    >p {
+                        color: #BB4552;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .login {
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+
+            .column {
+                .form {
+
+                    .labelEmail,
+                    .labelPass {
+                        color: #000;
+                    }
+
+                    .inputEmail {
+                        background-color: #fff;
+                        color: #000;
+                    }
+
+                    .wrap {
+                        .inputPassword {
+                            background-color: #fff;
+                            color: #000;
+                        }
+
+                    }
+
+                    .forgotPass {
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {}

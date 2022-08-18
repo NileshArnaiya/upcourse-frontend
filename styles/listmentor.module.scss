@@ -1,0 +1,18 @@
+.listmentor{
+    background-color: #fff;
+}
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    a,
+    .btnPrev,
+    .btnNext {
+        color: blue;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #fff;
+        border: 1px solid #f1f1f1;
+    }
+}

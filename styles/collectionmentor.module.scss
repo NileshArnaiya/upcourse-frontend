@@ -1,0 +1,131 @@
+.collectionmentors {
+    background: url("../public/shapes/white_triangle.png") bottom 15% right 5%, url("../public/shapes/white_triangle.png") top 20% right 15%, url("../public/shapes/white_triangle.png") top 40% left 3%, linear-gradient(#ffffff 0%, #8DD2D2 40%);
+    background-repeat: no-repeat;
+    height: 90vh;
+
+    .title {
+        text-align: center;
+        font-size: 1.875rem;
+        color: #172E59;
+
+        >span {
+            display: block;
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 3rem 0;
+        color: #172E59;
+
+        >p {
+            width: 60%;
+            text-align: center;
+        }
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+
+        .column {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            min-height: 100%;
+            padding: 1rem;
+
+            .header {
+                height: 50%;
+                .wrap {
+                    display: flex;
+                    align-items: center;
+
+                    .picuser {
+                        padding-right: 1rem;
+                    }
+
+                    .info {
+                        flex: 1;
+                        color: #000;
+
+                        .name {
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
+
+                        .job {
+                            font-size: 0.75rem;
+                            color: #a9a3b7;
+                            padding-top: 0.5rem;
+                        }
+                    }
+                }
+
+                .mentorship {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0.5rem;
+                    background-color: #f1f1f1;
+                    color: #172E59;
+                    font-weight: 600;
+                    border-radius: 5px;
+                    font-size: 0.875rem;
+                    margin: 1rem 0;
+                }
+
+                .line {
+                    border: 1px solid #000;
+                    height: 1px;
+                    margin: 1rem 0;
+                }
+
+            }
+
+            .body {
+                height: 50%;
+                .package {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #f1f1f1;
+                    color: #172E59;
+                    font-weight: 600;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    font-size: 0.875rem;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .collectionmentors {
+        background: none;
+        background-image: linear-gradient(#ffffff 0%, #8DD2D2 40%);
+        height: 190vh;
+
+        .description {
+            >p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .collectionmentors {
+        .wrap {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.buttonCategory {
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    min-width: 113px;
+    padding: 9px 20px 9px 12px;
+    border-radius: 1.5rem;
+    line-height: 24px;
+    position: relative;
+    font-size: .875rem;
+    padding-left: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #cacaca;
+    margin-right: 1rem;
+
+    &:hover {
+        background-color: #F3F4F6;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 0;
+        padding-right: 0.75rem;
+        display: flex;
+        align-items: center;
+        color: #08c3a8;
+    }
+}
