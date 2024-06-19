@@ -4,7 +4,7 @@ import { FaHome, FaAngleRight, FaClock, FaCalendarCheck } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Image from 'next/future/image';
+import Image from 'next/image';
 import styles from "../../styles/detailmentor.module.scss";
 import Link from 'next/link';
 
