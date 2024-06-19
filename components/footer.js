@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="container">
                 <div className={styles.container}>
                     <div className={styles.column}>
-                        <Image src="/logo/footer-logo.png" alt="footer logo" width={300} height={100} objectFit="contain" />
+                        <Image src="/logo/footer-logo.svg" alt="footer logo" width={300} height={100} objectFit="contain" />
                         <p className={styles.description}>
                             Your trusted source to find highly-vetted mentors & industry professionals to move your career ahead.
                         </p>

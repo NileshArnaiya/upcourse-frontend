@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="container">
                 <div className={styles.container}>
                     <div className={styles.logo}>
-                        <Image src="/logo/cruise_black_small.png" width={40} height={40} objectFit="contain" alt="logo" />
+                        <Image src="/logo/logo1.svg" width={40} height={40} objectFit="contain" alt="logo" />
 
                     </div>
                     <ul className={styles.menu}>
